@@ -1,19 +1,40 @@
-import { gsap } from "gsap";
-import { Flip } from "gsap/Flip";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { ScrollToPlugin } from "gsap/ScrollToPlugin";
-import { TextPlugin } from "gsap/TextPlugin";
+// import { gsap } from "gsap";
 
-gsap.registerPlugin(Flip,ScrollTrigger,ScrollToPlugin,TextPlugin);
+// import { Flip } from "gsap/Flip";
+// import { ScrollTrigger } from "gsap/ScrollTrigger";
+// import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+// import { TextPlugin } from "gsap/TextPlugin";
 
-const ham = document.querySelector('.dot');
+// gsap.registerPlugin(Flip,ScrollTrigger,ScrollToPlugin,TextPlugin);
+
+const ham = document.querySelector('.nav__icons');
+const dots = document.querySelectorAll('.dot');
 const mobileMenu = document.querySelector('.mobile__menu');
+const nav = document.querySelector('.nav');
 
 
 ham.addEventListener('click', () => {
-    // mobileMenu.classList.toggle('active');
-    console.log('working!');
+    showDots();
+    // console.log('working!');
+    // if(nav.style.background == "#000000") {
+    //     return nav.style.background = "#FAFAFA";
+    // }
 })
+
+function showDots() {
+    dots.forEach(dot => {
+        dot.classList.toggle('show');
+        // nav.style.background = "#000000";
+        mobileMenu.classList.toggle('active');
+
+    })
+}
+
+
+
+
+
+
 
 // let hamTL = gsap.timeline();
 // hamTL. fromtTo(

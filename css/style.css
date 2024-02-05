@@ -3,6 +3,7 @@
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
 }
 
 a {
@@ -20,17 +21,19 @@ body {
     font-family: 'Poppins', sans-serif;
     color: #000000;
     background: #222222;
+    padding: 0;
+    margin: 0;
 }
 
 .nav {
     position: fixed;
     padding: 1em;
+    background-image: linear-gradient(to right top, #5b2c5f, #b13d61, #e96f42, #ebbc12);
     /* background: #ffa500; */
     /* background: #313131; */
-    background: #ffffff;
-
+    /* background: #FAFAFA; */
     width: 100%;
-    z-index: 10;
+    z-index: 9999;
 }
 
 .nav__content{
@@ -45,7 +48,7 @@ body {
     font-size: 1.5em;
     font-weight: 900;
     cursor: pointer;
-    color: #333;
+    color: #F3F3F3;
 }
 
 .nav__content-logo {
@@ -93,41 +96,44 @@ body {
     /* height: 30px; */
     padding: 1em;
     cursor: pointer;
-    border: 1px solid lime;
+    /* border: 1px solid lime; */
 }
 
 .nav__icons .dot {
     position: absolute;
-    width: 24px;
-    height: 24px;
+    width: 22px;
+    height: 22px;
     border-radius: 50px;
     right:0;
-    background: #000000;
+    transition: all .4s ease-in-out;
+    
 }
 
 .nav__icons .dot.show {
-    width: 10px;
-    height: 10px;
-    border-radius: 50px;
     right:0;
-    background: #000000;
-    z-index: 99;
+    width: 22px;
+    height: 22px;
+    /* border: 5px solid #000000; */
+    /* background: #ffa500; */
+    background: #FAFAFA;
 }
 
 .nav__icons .dot1 {
     position: absolute;
-    right:58px;
+    right:47px;
     width: 10px;
     height: 10px;
-    background: dodgerblue;
+    /* border: 3px solid red; */
+    background: #F3F3F3;
 }
 
 .nav__icons .dot2 {
     position: absolute;
-    right: 33px;
-    width: 16px;
+    right: 28px;
+    width: 14px;
     height: 10px;
-    background: green;
+    /* border: 5px solid red; */
+    background: #F3F3F3;
 }
 
 
@@ -136,8 +142,8 @@ body {
     right: 0;
     width: 24px;
     height: 10px;
-    background: red;
-
+    /* border: 6px solid green; */
+    background: #F3F3F3;
 }
 
 
@@ -256,11 +262,11 @@ body {
         justify-content: center;
         align-items: center;
         width: 100%;
-        height: 100dvh;
+        height: 100%;
         text-align: center;
         padding: 1em 0;
         background: rgba(0, 0, 0, 0.8);
-        line-height: 40px;
+        line-height: 56px;
         transition: transform 1s ease-in-out;
         transform: translate3d(0, -100px, 0);
         z-index: 10;
@@ -275,6 +281,7 @@ body {
     }
 
     .mobile__menu-list li a {
+        font-size: 1.5em;
         color: #FAFAFA;
     }
 
