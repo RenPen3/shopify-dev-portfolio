@@ -28,8 +28,8 @@ body {
 .nav {
     position: fixed;
     padding: 1em;
-    background-image: linear-gradient(to right top, #5b2c5f, #b13d61, #e96f42, #ebbc12);
-    /* background: #ffa500; */
+    /* background-image: linear-gradient(to right top, #5b2c5f, #b13d61, #e96f42, #ebbc12); */
+    background: #ffa500;
     /* background: #313131; */
     /* background: #FAFAFA; */
     width: 100%;
@@ -48,7 +48,7 @@ body {
     font-size: 1.5em;
     font-weight: 900;
     cursor: pointer;
-    color: #F3F3F3;
+    color: #000000;
 }
 
 .nav__content-logo {
@@ -116,6 +116,7 @@ body {
     /* border: 5px solid #000000; */
     /* background: #ffa500; */
     background: #FAFAFA;
+    background: #000000;
 }
 
 .nav__icons .dot1 {
@@ -124,7 +125,7 @@ body {
     width: 10px;
     height: 10px;
     /* border: 3px solid red; */
-    background: #F3F3F3;
+    background: #000000;
 }
 
 .nav__icons .dot2 {
@@ -133,7 +134,7 @@ body {
     width: 14px;
     height: 10px;
     /* border: 5px solid red; */
-    background: #F3F3F3;
+    background: #000000;
 }
 
 
@@ -143,7 +144,7 @@ body {
     width: 24px;
     height: 10px;
     /* border: 6px solid green; */
-    background: #F3F3F3;
+    background: #000000;
 }
 
 
@@ -212,7 +213,7 @@ body {
 }
 
 .hero__content-left .btn1:hover {
-    background: rgb(255, 180, 40);
+    background: rgb(234, 152, 0);
 }
 
 .hero__content-left .btn2 {
@@ -228,7 +229,7 @@ body {
 
 
 /* .hero__content-right {
-    width: 40%;
+    width: 50%;
 }
 
 .hero__content-right img{
