@@ -160,7 +160,7 @@ body {
 /* Hero Section */
 .hero {
     padding: 16em 1em 12em 1em;
-    background: dodgerblue;
+    background: #222;
 }
 
 .hero__content {
@@ -180,7 +180,7 @@ body {
 
 .hero__content-left small {
     font-family: 'Roboto', sans-serif;
-    color: #000000;
+    color: dodgerblue;
     font-size: 1.5em;
     font-weight: 700;
 }
@@ -189,11 +189,13 @@ body {
     color: #FAFAFA;
     font-size: 4em;
     text-transform: uppercase;
+    margin: .3em 0;
 }
 
 .hero__content-left p {
     font-family: 'Roboto', sans-serif;
     font-size: 1.125em;
+    color: #b6b6b6;
     margin-bottom: 1.5em;
     width: 50%;
 }
@@ -227,6 +229,44 @@ body {
 }
 
 
+/* Skill Section */
+.skills {
+    padding: 3em 1em;
+    background: #111111;
+}
+
+.skills__content {
+    display: grid;
+    grid-template:repeat(2, 1fr) / repeat(3, 1fr);
+    justify-content: center;
+    align-items:  center;
+    justify-items: center;
+    align-content: center;
+    gap: 2em;
+    margin-inline: auto;
+    width: min(90%, 900px);
+}
+
+.skills__content-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    /* background: lightgrey; */
+    border: 2px solid #F3F3F3;
+    box-shadow: 8px 8px 0 #F3F3F3;
+    box-shadow: 8px 8px 0 #F3F3F3;
+}
+
+.skills__content-box h2 {
+    font-size: 1.2em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #E7E7E7;
+}
+
+
 
 /* .hero__content-right {
     width: 50%;
@@ -253,7 +293,10 @@ body {
     .nav__icons {
         display: flex;
         width: 80px;
-        
+    }
+
+    .hero {
+        padding: 16em 1em 7em 1em;
     }
 
     /* Mobile Section */
@@ -266,7 +309,7 @@ body {
         height: 100%;
         text-align: center;
         padding: 1em 0;
-        background: rgba(0, 0, 0, 0.8);
+        background: rgba(0, 0, 0, 1);
         line-height: 56px;
         transition: transform 1s ease-in-out;
         transform: translate3d(0, -100px, 0);
@@ -295,12 +338,17 @@ body {
     }
 
     .hero__content-left h1 {
-        line-height: 60px;
+        font-size: 3em;
+        line-height: 48px;
     }
 
     .hero__content-left p {
         width: 100%;
     }
+
+    .hero__content-left .btn  {
+        margin-right: 0;
+     }
 
     .hero__content-left .btn2  {
        display: none;
